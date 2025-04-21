@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Prof Roger Bassan | 02 Trabalho</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+
+        }
+        .box-nav{
+            background-color: gold;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .box{
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        }
+        input{
+            padding: 10px;
+            border: none;
+            outline:none;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 50%;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 50%;
+            background-color: slateblue;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: cornflowerblue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box-nav">
+        <h1>TRABALHO #02</h1>
+        <h2>Disciplina de Algoritmos</h2>
+    </div>
+    <div class="box">
+        <p>Digite e selecione o seu rendimento, veja a tarifa de imposto de renda (IR) que irá pagar  </p>
+        <input type="number" id="value1" class="num" placeholder="Digite seu rendimento">
+        <br><br>
+        <input type="radio" id="1" name="operation" value="1">
+        <label for="1">De R$ 2.259,21 até R$ 2.826,65</label>
+        <br><br>
+        <input type="radio" id="2" name="operation" value="2">
+        <label for="2">De R$ 2.826,66 até R$ 3.751,05</label>
+        <br><br>
+        <input type="radio" id="3" name="operation" value="3">
+        <label for="3">De R$ 3.751,06 até R$ 4.664,68</label>
+        <br><br>
+        <input type="radio" id="4" name="operation" value="4">
+        <label for="4">Acima de R$ 4.664,68</label>
+        <br><br>
+        <button onclick="calculation()">Enviar</button>
+    </div>
+</body>
+    <script>
+        function calculation()
+       { 
+        var a = parseInt(document.querySelector('#value1').value);
+        console.log(a);
+
+        var selectOperation = document.querySelector('input[name="operation"]:checked').value;
+        console.log(selectOperation);
+        
+        var nameOperation, calculo;
+        if (selectOperation == '1')
+        {
+            nameOperation='A tarifa de imposto é: '
+            calculo = a * 0.075+ " reais"; // 7.5% de imposto 
+        }
+
+        else if (selectOperation == '2')
+        {
+            nameOperation='A tarifa de imposto é: '
+            calculo = a * 0.15+ " reais"; // 15% de imposto
+        }
+        else if (selectOperation == '3')
+        {
+            nameOperation='A tarifa de imposto é: '
+            calculo = a * 0.225+ " reais"; // 22.5% de imposto
+        }
+        else if (selectOperation == '4')
+        {
+            nameOperation='A tarifa de imposto é: '
+            calculo = a * 0.275+ " reais"; // 27.5% de imposto
+        }
+        console.log(calculo);
+        alert(nameOperation + calculo);
+
+        }
+    
+    </script>
+</html> 
