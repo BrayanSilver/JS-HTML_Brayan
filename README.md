@@ -1,5 +1,2 @@
-![Captura de Tela (71)](https://github.com/user-attachments/assets/d12d38f3-bf51-40e9-8024-7765ca4c76ff)
-![Captura de Tela (73)](https://github.com/user-attachments/assets/e9c2c712-242e-4e9e-85a9-d2a556638201)
-![Captura de Tela (74)](https://github.com/user-attachments/assets/91c51a2f-5261-4601-8921-25292cb91edd)
-![Uploading Captura de Tela (77).png…]()
-![Uploading Captura de Tela (78).png…]()
+![Uploading Captura de Tela (71).png…]()
+![Captura de Tela (78)](https://github.com/user-attachments/assets/eafc5869-af53-4da5-ae73-9a2ceaf74d9d)
